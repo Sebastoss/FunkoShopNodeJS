@@ -6,7 +6,7 @@ module.exports = {
         
         // lectura del archivo productos.json (fs.readFile) con una promesa callback. Devuelve error con res.send si hay algun problema, sino renderiza enviando los productos a la view shop.
 
-        fs.readFile("data/productos.json", (err, data) => {
+        fs.readFile("src/data/productos.json", (err, data) => {
 
             if (err) {
 
@@ -27,7 +27,7 @@ module.exports = {
 
         console.log(id)
 
-        fs.readFile("data/productos.json", (err, data) => {
+        fs.readFile("src/data/productos.json", (err, data) => {
 
             if (err) {
 
