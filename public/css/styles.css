@@ -5,6 +5,15 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Header */
+
+.logo{
+    max-width: 300px;
+    min-width: 100px;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
 /* Navbar Menu */
 nav {
     width: 100%;
@@ -39,27 +48,92 @@ nav {
 
 /* Home */
 
-.nuevos-ingresos {
+.nuevosIngresos {
     padding: 2rem;
     height: 388px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/funkos-banner.webp');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
 }
 
-.nuevos-ingresos button {
+.nuevosIngresosButton {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
     margin-top: 2rem;
-    width: 200px;
+    max-width: 200px;
     height: 35px;
     background-color: white;
     border: 0px solid #FFF;
     border-radius: 50px;
     font-size: 20px;
     font-weight: 900;
+    text-align: center;
+    padding: 6px;
+}
+
+.nuevosIngresosButton:hover {
+    background-color: #30343f;
+    color: white;
+}
+
+.coleccionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem 1rem;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.coleccionContainer:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.tituloColeccion {
+    margin-bottom: 0.5rem;
+    width: 60%;
+    color: #30343f;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+.descripcionColeccion {
+    color: #30343f;
+    width: 60%;
+
+}
+
+.hrColeccion {
+    margin-top: 1.5rem;
+    border: 1px solid;
+    border-color: red;
+    
+}
+
+.buttonColeccion {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: white;
+    margin-top: 1.5rem;
+    max-width: 250px;
+    width: 180px;
+    height: 40px;
+    background-color: #30343f;
+    border: 0px solid #30343f;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    padding: 9px;
 }
 
 /* Footer */
@@ -184,11 +258,11 @@ footer {
     border-color: red;
 }
 
-.shopBtnPag:last-child{
+.shopBtnPag:last-child {
     color: #c9c9c9;
 }
 
-.shopBtnPag:hover:not(:last-child){
+.shopBtnPag:hover:not(:last-child) {
     background-color: #30343f;
     color: white;
 }
@@ -200,7 +274,7 @@ footer {
     margin: 1rem;
 }
 
-label{
+label {
     display: block;
     margin: 10px 0;
 

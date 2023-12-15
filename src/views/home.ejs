@@ -4,11 +4,27 @@
 <body>
     <%- include('partials/navbar') %>
     <main>
-        <div class="nuevos-ingresos">
+        <div class="nuevosIngresos">
             <h1>Nuevos Ingresos</h1>
             <p>Descubri el proximo Funko Pop de tu coleccion</p>
-            <button>SHOP</button>
+            <a href="shop" class="nuevosIngresosButton">SHOP</a>
         </div>
+
+        <section>
+            <% colecciones.forEach( coleccion => { %>
+            <div class="coleccionContainer">
+                <div>
+                    <p class="tituloColeccion"><%= coleccion.nombre %></p>
+                    <p class="descripcionColeccion"><%= coleccion.descripcion %></p>
+                    <hr class="hrColeccion">
+                    <a href="" class="buttonColeccion">VER COLECCION</a>
+                </div>
+                <div>
+                    <img src=<%= coleccion.img %> width="300px" alt="">
+                </div>
+            </div>
+            <% }) %>
+        </section>
 
     </main>
     <%- include("partials/footer") %>

@@ -4,7 +4,11 @@ module.exports = {
 
     home: (req, res) => {
 
-    res.render('home', {title:"Home"})
+        const coleccionesJSON = require("../data/colecciones.json");
+
+        console.log(coleccionesJSON)
+
+    res.render('home', {title:"Home", colecciones: coleccionesJSON})
 },
     contact: (req, res) => res.send("Página de Contacto"),
     about: (req, res) => res.send("Página Sobre Nosotros"),
