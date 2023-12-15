@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navbar Menu */
+nav {
+    width: 100%;
+    padding: 0.8rem;
+    display: flex;   
+    background-color: #30343f;
+    justify-content:space-between;
+
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    color: white;
+    align-items: center;
+}
+
+.menu li {
+    padding: 0.5rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Home */
+
+.nuevos-ingresos {
+    padding: 2rem;
+    height: 388px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/funkos-banner.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.nuevos-ingresos button {
+    margin-top: 2rem;
+    width: 200px;
+    height: 35px;
+    background-color: white;
+    border: 0px solid #FFF;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: #30343f;
+    height: auto;
+}
+.footerContainer{
+    padding: 60px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerContainer ul{
+    align-self: center;
+}
+
+.footerContainer li {
+    list-style: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.footerContainer li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerCopyright{
+    color: white;
+    text-align: center;
+    padding: 0 0 15px 0;
+}
+
+/* SHOP */
+#mainContainer {
+    margin: 1rem auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#shopContainer {
+    margin: 0 1rem;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+#itemsContainer {
+    margin: 1rem;
+    width:100%;
+    max-width: 720px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.shopItem {
+    margin: 3px;
+    padding: 1rem;
+    /*border: #30343f solid 1px;*/
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.shopItem:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+.shopItem img {
+    width: 200px;
+}
+
+.itemLicencia {
+    margin-bottom: 5px;
+    font-size: small;
+    color: gray;
+}
+
+.itemNombre {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.itemPrecio {
+    margin-bottom: 5px;
+}
+
+.itemCuotas {
+    color: rgb(68, 79, 207);
+    font-weight: bolder;
+    font-size: small;
+}
+
+#shopPaginacion {
+    margin: 1rem auto;
+    display: flex;
+    width: 720px;
+    justify-content: center;
+
+}
+
+.shopBtnPag {
+    margin: 0.1rem;
+    padding: 0.7rem;
+    border: #e9e9e9 solid 1px;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.shopBtnPag:first-child {
+  background-color: #c9c9c9;
+  color: white;
+}
+
+.shopBtnPag:nth-child(2){
+    color: red;
+    border-color: red;
+}
+
+.shopBtnPag:last-child{
+    color: #c9c9c9;
+}
+
+.shopBtnPag:hover:not(:last-child){
+    background-color: #30343f;
+    color: white;
+}
+
+.filtroShop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    margin: 1rem;
+}
+
+label{
+    display: block;
+    margin: 10px 0;
+
+}
+
+input {
+    padding: 5px;
+    border: #30343f solid 2px;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inputPrecio{
+    text-align: center;
+    height: 25px;
+    width: 30px;
+    margin: 6px 7px;
+}
+
+/* ShopItem */
+
+#shopItemImg img {
+    width: 300px;
+}
+
+#shopItemInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#shopItemInfo h1 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+#shopItemInfo p {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #30343f;
+}
+
+#shopItemInfo p:nth-child(3) {
+    text-transform:capitalize; 
+}
+
+#shopItemInfo p:last-child {
+    font-size: x-large;
+}

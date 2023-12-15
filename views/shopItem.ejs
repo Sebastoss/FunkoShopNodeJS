@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<body>
+    <%- include("partials/navbar") %>
+    <main id="mainContainer">
+        
+        <div id="shopItemImg">
+            <img src=<%= item.img_front %> alt="">
+        </div>
+
+        <div id="shopItemInfo">
+            <p><%= item.licence_name %></p>
+            <h1><%= item.product_name %></h1>
+            <p><%= item.product_description %> de <%= item.product_name %></p>
+            <p>$ <%= item.product_price %></p>
+        </div>
+
+    </main>
+    
+
+    <%- include("partials/footer") %>
+</body>
+</html>

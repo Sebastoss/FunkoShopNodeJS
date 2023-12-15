@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head") %>
+<body>
+    <%- include("partials/navbar") %>
+    <main id="mainContainer">
+        <div id="shopContainer">
+
+            <div id="filtroShop">
+
+                <label for="item">BUSCAR</label>
+                <input type="text" name="item" id="item" placeholder="item o categoria">
+
+                <label for="ordenar">ORDENAR POR</label>
+                <input type="text" name="ordenar" id="ordenar" placeholder="Mayor o menor">
+
+                <label for="precio">PRECIO
+                    <div style="display: flex;"> 
+                        <label for="precioMin">MIN</label>
+                        <input type="number" name="precioMin" id="precioMin" placeholder="0" class="inputPrecio">
+
+                        <label for="precioMax">MAX</label>
+                        <input type="number" name="precioMax" id="precioMax" class="inputPrecio" placeholder="0">
+                    </div>
+                </label>
+
+                <label for="filtrar">FILTRAR</label>
+
+                    <label style="display:flex; flex-direction:row;">
+                        <input type="checkbox" name="filtrarNuevos" id="filtrarNuevos">
+                        <p>NUEVOS</p>
+                    </label>
+
+                    <label style="display:flex; flex-direction:row;">
+                        <input type="checkbox" name="filtrarOfertas" id="filtrarOfertas">
+                         <p>OFERTAS</p>
+                    </label>
+
+                    <label style="display:flex; flex-direction:row;">
+                        <input type="checkbox" name="filtrarESP" id="filtrarEsp">
+                        <p>EDICION ESPECIAL</p>
+                    </label>
+
+                    <label style="display:flex; flex-direction:row;">
+                        <input type="checkbox" name="filtrarFav" id="filtrarFav">
+                        <p>FAVORITOS</p>
+                    </label>
+                    
+                    
+                
+            </div>
+            <div id="itemsContainer">
+                <% items.forEach(producto => { %>
+                    <div class="shopItem">
+                        <a href="shop/item/<%= producto.product_sku %>"><img src="<%= producto.img_front %>" alt="<%= producto.product_name %>"></a> 
+                        <p class="itemLicencia"><%= producto.licence_name %></p>
+                        <p class="itemNombre"><%= producto.product_name %></p>
+                        <p class="itemPrecio">$<%= producto.product_price %></p>
+                        <p class="itemCuotas">3 cuotas sin interes</p>
+                    </div>
+                <% })  %>
+            </div>
+        </div>
+        <div id="shopPaginacion">
+            <div class="shopBtnPag"><</div>
+            <div class="shopBtnPag">1</div>
+            <div class="shopBtnPag">2</div>
+            <div class="shopBtnPag">...</div>
+            <div class="shopBtnPag">9</div>
+            <div class="shopBtnPag">10</div>
+            <div class="shopBtnPag">></div>
+        </div>
+    </main>
+    
+
+    <%- include("partials/footer") %>
+</body>
+</html>
