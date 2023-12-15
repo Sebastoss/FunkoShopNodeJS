@@ -9,7 +9,7 @@ const port = 3000;
 
 // Carpeta Public
 
-app.use(express.static('public'));
+app.use(express.static('/public'));
 
 // Motor de vistas EJS y su carpeta
 app.set ("view engine", "ejs")
