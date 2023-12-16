@@ -136,6 +136,11 @@ nav {
     padding: 9px;
 }
 
+.ultimosLanzamientos{
+    text-transform: uppercase;
+    margin: 2rem auto;
+    max-width: 768px;
+}
 /* Footer */
 footer {
     width: 100%;
@@ -329,3 +334,5 @@ input::-webkit-inner-spin-button {
 #shopItemInfo p:last-child {
     font-size: x-large;
 }
+
+/* Slider */

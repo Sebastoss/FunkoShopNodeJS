@@ -24,6 +24,7 @@ module.exports = {
     },
     shopItem: (req,res)=>{
         let id = req.params.id
+        let productos = require('../data/productos.json')
 
         console.log(id)
 
@@ -60,7 +61,7 @@ module.exports = {
                 });
 
                 if(itemFound){
-                    res.render("shopItem",{title: `Funko Shop ${itemInfo.product_name}`, item: itemInfo})
+                    res.render("shopItem",{title: `Funko Shop ${itemInfo.product_name}`, item: itemInfo, productos:productos})
 
                 } else {
 
