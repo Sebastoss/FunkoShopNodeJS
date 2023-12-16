@@ -1,11 +1,20 @@
 # FUNKOSHOP - Trabajo práctico de NodeJS
 
-Comisión: 23570
+# Instalación
 
-por Sebastián Pozzi
+Pasos
+
+1: npm install
+2: npm run dev
 
 # Proyecto
 
 El trabajo realizado abarca las views Home, Shop y ShopItem.
 
 Tanto Home como ShopItem incluyen un slider gestionado con glidejs.
+
+# Licencia
+
+Comisión: 23570
+
+por Sebastián Pozzi
