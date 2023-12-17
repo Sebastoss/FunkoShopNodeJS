@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("partials/head") %>
+<body>
+    <%- include("partials/navbar") %>
+    <main id="mainShopCart">
+
+        <h1>Carrito de compras</h1>
+
+        <div class="shopCart shopCartBorder">
+            <p>DETALLE DEL PRODUCTO</p>
+            <p>CANTIDAD</p>
+            <p>TOTAL</p>
+        </div>
+
+        <div class="shopCart shopCartBorder">
+            <div class="shopCart">
+                <img class="shopItemCart" src="/img/star-wars/baby-yoda-1.webp" alt="">
+                <div>
+                    <p class="tituloItemCart">BABY YODA BLUEBALL</p>
+                    <p class="catItemCart">STAR WARS</p>
+                    <p class="precioItemCart">Precio unitario: $ 1799,99</p>
+                </div>
+            </div>
+            <div class="shopCart">
+                <label for="cantidadItem" aria-label="cantidadItem">
+                    <input type="number" name="cantidadItem" value="0" id="cantidadItem" class="inputShopCartCantidad">
+                </label>
+                <div>
+                    <button class="btnItemCant btnShopCartCant" onclick="">+</button>
+                    <button class="btnItemCant btnShopCartCant">-</button>
+                </div>
+            </div>
+            <p>$ 1799,99</p>
+            <button class="eliminarItem">X</button>
+        </div>
+
+        <div id="resumenCart">
+            <h2>RESUMEN</h2>
+            <div class="shopCartResumenContainer shopCartBorder">
+                <div class="resumenCartFlex">
+                    <p>Cantidad de elementos</p>
+                    <p>3</p>
+                </div>
+                <div class="resumenCartFlex">
+                    <p>Subtotal</p>
+                    <p>$5.339,37</p>
+                </div>
+                <div class="resumenCartFlex">
+                    <p>Envío</p>
+                    <p>$ 0,00</p>
+                </div>
+                <hr class="hrResumenTotalCart">
+                <div class="resumenCartFlex">
+                    <p>Total</p>
+                    <p>$5.339,37</p>
+                </div>
+            </div>
+                <button class="shopCartResumenContainer btnPagar">IR A PAGAR</button>
+        </div>
+    </main>
+    <%- include("partials/footer") %>
+    <script src="/js/shopItem.js"></script>
+</body>
+</html>

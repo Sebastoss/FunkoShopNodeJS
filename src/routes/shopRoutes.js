@@ -3,14 +3,14 @@ const fs = require('fs')
 
 const router = express.Router();
 
-const {shop, shopItem} = require('../controllers/shopControllers.js')
+const {shop, shopItem, shopCart} = require('../controllers/shopControllers.js')
 
 // Shop ROUTES
 
 router.get("/", shop);
 router.get("/item/:id", shopItem);
 router.post("/item/:id/add", );
-router.get("/cart", );
+router.get("/cart", shopCart);
 router.post("/cart", );
 
 

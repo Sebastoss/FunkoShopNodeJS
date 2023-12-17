@@ -70,6 +70,10 @@ module.exports = {
             } 
         });
         
+    },
+    shopCart: (req,res)=>{
+
+        res.render("shopCart", {title:`Funko Shop - Carrito`})
     }
 
 

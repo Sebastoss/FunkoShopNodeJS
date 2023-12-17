@@ -54,30 +54,29 @@
                 </div>
 
             </div>
-
-            <!-- Montamos glide para que funcione el carrusel  -->
-            <script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
-            <script>
-                new Glide('.glide', {
-                    type: 'carousel',
-                    startAt: 0,
-                    perView: 3,
-                    gap: 30,
-                    autoplay: 2000,
-                    breakpoints: {
-                        991: {
-                            perView: 2
-                        },
-                        768: {
-                            perView: 1
-                        }
-                    }
-                }).mount();
-            </script>
         </section>
     </main>
 
     <%- include("partials/footer") %>
+                <!-- Montamos glide para que funcione el carrusel  -->
+                <script src="https://unpkg.com/@glidejs/glide@3.3.0/dist/glide.min.js"></script>
+                <script>
+                    new Glide('.glide', {
+                        type: 'carousel',
+                        startAt: 0,
+                        perView: 3,
+                        gap: 30,
+                        autoplay: 2000,
+                        breakpoints: {
+                            991: {
+                                perView: 2
+                            },
+                            768: {
+                                perView: 1
+                            }
+                        }
+                    }).mount();
+                </script>
 
     <script src="/js/shopItem.js"></script>
 =

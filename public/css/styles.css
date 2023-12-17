@@ -341,7 +341,7 @@ input::-webkit-inner-spin-button {
 #cantidadItem {
     width: 105px;
     height: 35px;
-    border: 1px solid #C9C9C9;
+    border: 0.5px solid #C9C9C9;
     border-radius: 3px;
     text-align: center;
     font-size: 20px;
@@ -402,4 +402,146 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
 }
 
-/* Slider */
+/* Shop Cart */
+
+#mainShopCart {
+    margin: 1.5rem 0;
+    padding: 2rem;
+}
+
+#mainShopCart h1 {
+    font-size: 46px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    border-bottom: solid 4px red;
+    display: inline-block;
+}
+
+.shopCart {
+    margin-top: 1rem;
+    padding: 0.6rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow:hidden;
+}
+
+.shopCartBorder{
+    border: 1px solid #FAFAFF;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.25);
+}
+
+.shopCart:first-of-type{
+    font-weight: 600;
+}
+
+.shopItemCart {
+    width: 200px;
+}
+
+.tituloItemCart{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.catItemCart{
+    font-size: 14px;
+    font-weight: 500;
+}
+.precioItemCart{
+    margin-top: 2rem;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.inputShopCartCantidad{
+   color: #000 !important;
+}
+
+.btnShopCartCant {
+
+    background-color: #F24E1E;
+
+}
+
+.eliminarItem{
+    border: 2px solid #F24E1E;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    color: #F24E1E;
+    font-weight: 600;
+}
+
+#resumenCart {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#resumenCart h2 {
+    margin: 3rem 0 1rem 0;
+    font-size: 46px;
+    border-bottom: 4px solid red;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.shopCartResumenContainer{
+    width: 100%;
+    max-width: 572px;
+}
+
+.resumenCartFlex{
+    padding: 1rem 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resumenCartFlex:last-of-type{
+    padding-bottom:1rem ;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+
+.resumenCartFlex p:first-child{
+    font-weight: 600 ;
+}
+.resumenCartFlex p:nth-child(2){
+    font-weight: 600;
+    color: #747474;
+}
+
+.resumenCartFlex:last-of-type p:first-child{
+    font-weight: 900 ;
+}
+
+
+.hrResumenTotalCart{
+    border-top: 2px solid red;
+    margin: 1rem 1rem 0.5rem 1rem;
+    padding: 0 1rem ;
+}
+
+.btnPagar{
+    margin-top: 2rem;
+    background-color: #FF3333;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    border: 0;
+    width: 100%;
+    max-width: 572px;
+    height: 68px;
+}
+
+
+
+
