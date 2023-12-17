@@ -16,7 +16,7 @@ module.exports = {
 
             } else {
 
-                console.log(JSON.parse(data));
+                //console.log(JSON.parse(data));
 
                 res.render('shop', {title: "Funko Shop", items: JSON.parse(data)});
             } 
@@ -26,7 +26,7 @@ module.exports = {
         let id = req.params.id
         let productos = require('../data/productos.json')
 
-        console.log(id)
+       // console.log(id)
 
         fs.readFile("src/data/productos.json", (err, data) => {
 

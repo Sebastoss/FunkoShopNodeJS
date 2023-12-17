@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Header */
@@ -187,6 +187,7 @@ footer {
     margin: 0 1rem;
     display:flex;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -331,8 +332,73 @@ input::-webkit-inner-spin-button {
     text-transform:capitalize; 
 }
 
-#shopItemInfo p:last-child {
-    font-size: x-large;
+#shopItemInfo p:nth-child(4) {
+    font-size: 38px;
+    font-weight: 400;
+
+}
+
+#cantidadItem {
+    width: 105px;
+    height: 35px;
+    border: 1px solid #C9C9C9;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+    color: #747474;
+}
+
+#shopItemContainerBtnCantidad {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    flex-wrap: wrap;
+}
+
+
+.btnItemCant {
+    display: flex;
+    margin: 0 0 4px 10px;
+    width: 18px;
+    height: 16px;
+    color: white;
+    background-color: #4F4F4F;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnItemCant:hover {
+    background-color: #FF3333;
+}
+
+.btnAgregarCarrito {
+    margin-left: 1rem;
+    width: 181px;
+    height: 38px;
+    background-color: #FF3333;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+}
+
+.btnAgregarCarrito:hover {
+    color: white;
+    background-color: #30343f;
+}
+
+.shopItemCuotas {
+    margin-top: 20px;
+    color: #1D84B5;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.tituloProductosRelacionados{
+    font-size:28px;
+    font-weight: 700;
 }
 
 /* Slider */

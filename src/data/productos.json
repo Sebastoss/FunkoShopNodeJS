@@ -6,7 +6,7 @@
         "product_name": "Pidgeotto",
         "product_description": "Figura coleccionable pokemon",
         "product_price": 1799.99,
-        "dues": 10,
+        "dues": 3,
         "product_sku": "PKM001001",
         "img_front": "/img/pokemon/pidgeotto-1.webp",
         "img_back": "/img/pokemon/pidgeotto-box.webp"
@@ -18,7 +18,7 @@
         "product_name": "Charmander",
         "product_description": "Figura coleccionable pokemon",
         "product_price": 1799.99,
-        "dues": 10,
+        "dues": 3,
         "product_sku": "PKM001002",
         "img_front": "/img/pokemon/charmander-1.webp",
         "img_back": "/img/pokemon/charmander-box.webp"
@@ -30,7 +30,7 @@
         "product_name": "Dragonite",
         "product_description": "Figura coleccionable pokemon",
         "product_price": 1799.99,
-        "dues": 10,
+        "dues": 3,
         "product_sku": "PKM001003",
         "img_front": "/img/pokemon/dragonite-1.webp",
         "img_back": "/img/pokemon/dragonite-box.webp"
@@ -42,7 +42,7 @@
         "product_name": "Pikachu",
         "product_description": "Figura coleccionable pokemon",
         "product_price": 1799.99,
-        "dues": 10,
+        "dues": 3,
         "product_sku": "PKM001004",
         "img_front": "/img/pokemon/pikachu-1.webp",
         "img_back": "/img/pokemon/pikachu-box.webp"
@@ -54,7 +54,7 @@
         "product_name": "Vulpix",
         "product_description": "Figura coleccionable pokemon",
         "product_price": 1799.99,
-        "dues": 10,
+        "dues": 3,
         "product_sku": "PKM001005",
         "img_front": "/img/pokemon/vulpix-1.webp",
         "img_back": "/img/pokemon/vulpix-box.webp"

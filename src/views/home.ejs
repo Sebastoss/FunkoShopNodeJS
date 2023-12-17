@@ -25,6 +25,7 @@
             </article>
             <% }) %>
         </section>
+        
         <section class="ultimosLanzamientos">
             <h2 class="tituloColeccion">ÚLTIMOS LANZAMIENTOS</h2>
             <div class="glide">
@@ -33,13 +34,13 @@
                         <% productos.forEach( producto => { %>
                             <article class="coleccionContainer">
                                 <div>
-                                    <a href="shop/item/<%= producto.product_sku %>"><img src=<%= producto.img_front %> width="300px" alt=""></a>
+                                    <a href="/shop/item/<%= producto.product_sku %>"><img src=<%= producto.img_front %> width="300px" alt=""></a>
                                 </div>
                                 <div>
                                     <p class="itemLicencia"><%= producto.licence_name %></p>
                                     <p class="itemNombre"><%= producto.product_name %></p>
                                     <p class="itemPrecio">$<%= producto.product_price %></p>
-                                <p class="itemCuotas">3 cuotas sin interes</p>
+                                <p class="itemCuotas"><%= producto.dues %> cuotas sin interes</p>
                                 </div>
                             </article>
                             <% }) %>
