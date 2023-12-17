@@ -508,11 +508,11 @@ input::-webkit-inner-spin-button {
 .resumenCartFlex:last-of-type{
     padding-bottom:1rem ;
     padding-top: 0;
-    text-transform: uppercase;
 }
 
 .resumenCartFlex p:first-child{
     font-weight: 600 ;
+    text-transform: uppercase;
 }
 .resumenCartFlex p:nth-child(2){
     font-weight: 600;
