@@ -7,7 +7,7 @@
         <div id="shopContainer">
             
             <div id="shopItemImg">
-                <img src=<%= item.img_front %> alt="">
+                <img src=<%= item.img_front %> alt="" onmouseover="cambiarImagen(this, '<%=item.img_back %>')" onmouseout="restaurarImagen(this, '<%=item.img_front %>')">
             </div>
 
             <div id="shopItemInfo">
@@ -15,14 +15,14 @@
                 <h1><%= item.product_name %></h1>
                 <p><%= item.product_description %> de <%= item.product_name %></p>
                 <p>$ <%= item.product_price %></p>
-
+    
                 <div id="shopItemContainerBtnCantidad"> 
                     <label for="cantidadItem" aria-label="Cantidad">
                         <input type="number" name="cantidadItem" id="cantidadItem" value="0">
                     </label>
                     <div id="btnItemCantContainer">
-                        <a href="" class="btnItemCant">+</a>
-                        <a href="" class="btnItemCant">-</a>
+                        <button href="" class="btnItemCant">+</button>
+                        <button href="" class="btnItemCant">-</button>
                     </div>
                     <button class="btnAgregarCarrito">Agregar al carrito</button>
                 </div>
@@ -78,5 +78,8 @@
     </main>
 
     <%- include("partials/footer") %>
+
+    <script src="/js/shopItem.js"></script>
+=
 </body>
 </html>

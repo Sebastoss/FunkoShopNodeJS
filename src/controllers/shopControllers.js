@@ -25,7 +25,7 @@ module.exports = {
     shopItem: (req,res)=>{
         let id = req.params.id
         let productos = require('../data/productos.json')
-
+        
        // console.log(id)
 
         fs.readFile("src/data/productos.json", (err, data) => {

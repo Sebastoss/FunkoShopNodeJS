@@ -329,7 +329,7 @@ input::-webkit-inner-spin-button {
 }
 
 #shopItemInfo p:nth-child(3) {
-    text-transform:capitalize; 
+    text-transform:none; 
 }
 
 #shopItemInfo p:nth-child(4) {
@@ -366,6 +366,7 @@ input::-webkit-inner-spin-button {
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    border: 0;
 }
 
 .btnItemCant:hover {
